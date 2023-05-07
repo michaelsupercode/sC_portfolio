@@ -37,9 +37,71 @@ header h2 {
     padding: 9vh 0;
 }
 
-/* main {
-    text-align: center;
-    width: 1260px;
-    border: 1px solid black;
+main section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    padding: 20vh 5vw 10vh 12.5vw;
+}
+
+main section:first-of-type {
+    background-image: url('../img/portfolio2.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+/* main section:nth-of-type(2) {
+    background-image: url('../img/portfolio3.png');
+}
+
+main section:nth-of-type(3) {
+    background-image: url('../img/portfolio4.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+main section:nth-of-type(4) {
+    background-image: url('../img/portfolio5.png');
 } */
 
+main section:nth-of-type(odd) div {
+    padding-top: 60px;
+}
+
+footer article {
+}
+
+footer article div {
+    text-align: center;
+    padding: 5vh;
+    padding-top: 13vh;
+}
+
+footer article div a {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 15rem;
+    color: #000000;
+    text-decoration: none;
+}
+
+footer article p {  
+    color: black;
+    content: '\2764';
+    font-size: 1rem;
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes heartbeat {
+    from {
+        font-size: 1rem;
+    }
+
+    to {
+        font-size: 3rem;
+    }
+}
